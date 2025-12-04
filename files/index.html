@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Restaurant Booking Voice Agent</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Restaurant Booking Voice Agent</h1>
+      <p>
+        Click the button and speak with the assistant to book a table. Make sure
+        to allow microphone access.
+      </p>
+
+      <button id="startBtn">Start Voice Assistant</button>
+      <p id="statusText" class="status"></p>
+
+      <div class="panels">
+        <div class="panel">
+          <h2>You said</h2>
+          <p id="userSpeech" class="box"></p>
+        </div>
+
+        <div class="panel">
+          <h2>Assistant</h2>
+          <p id="assistantText" class="box"></p>
+        </div>
+      </div>
+
+      <hr />
+
+      <section>
+        <h2>Existing Bookings</h2>
+        <button id="refreshBtn">Refresh Bookings</button>
+        <ul id="bookingsList"></ul>
+      </section>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
